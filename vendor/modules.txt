@@ -33,6 +33,8 @@ github.com/NVIDIA/nvidia-container-toolkit/internal/nvcaps
 github.com/NVIDIA/nvidia-container-toolkit/internal/oci
 github.com/NVIDIA/nvidia-container-toolkit/internal/platform-support/tegra
 github.com/NVIDIA/nvidia-container-toolkit/internal/platform-support/tegra/csv
+github.com/NVIDIA/nvidia-container-toolkit/pkg/config/engine
+github.com/NVIDIA/nvidia-container-toolkit/pkg/config/engine/containerd
 github.com/NVIDIA/nvidia-container-toolkit/pkg/nvcdi
 github.com/NVIDIA/nvidia-container-toolkit/pkg/nvcdi/spec
 github.com/NVIDIA/nvidia-container-toolkit/pkg/nvcdi/transform

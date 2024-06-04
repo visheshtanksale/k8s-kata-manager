@@ -42,6 +42,7 @@ import (
 	"github.com/NVIDIA/k8s-kata-manager/internal/kata/transform"
 	"github.com/NVIDIA/k8s-kata-manager/internal/oras"
 	"github.com/NVIDIA/k8s-kata-manager/internal/version"
+	containerd "github.com/NVIDIA/nvidia-container-toolkit/pkg/config/engine/containerd"
 )
 
 const (
