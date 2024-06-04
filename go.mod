@@ -3,14 +3,14 @@ module github.com/NVIDIA/k8s-kata-manager
 go 1.21
 
 require (
-	github.com/NVIDIA/go-nvlib v0.2.0
-	github.com/NVIDIA/nvidia-container-toolkit v1.15.0
+	github.com/NVIDIA/go-nvlib v0.5.0
+	github.com/NVIDIA/nvidia-container-toolkit v1.15.1-0.20240604080937-dfc8e22e12fc
 	github.com/opencontainers/image-spec v1.1.0
 	github.com/pelletier/go-toml v1.9.5
 	github.com/sirupsen/logrus v1.9.3
 	github.com/stretchr/testify v1.9.0
-	github.com/urfave/cli/v2 v2.27.1
-	golang.org/x/sys v0.19.0
+	github.com/urfave/cli/v2 v2.27.2
+	golang.org/x/sys v0.20.0
 	k8s.io/apimachinery v0.27.1
 	k8s.io/client-go v0.27.1
 	k8s.io/klog/v2 v2.90.1
@@ -22,8 +22,8 @@ require (
 
 require (
 	github.com/BurntSushi/toml v1.3.2 // indirect
-	github.com/NVIDIA/go-nvml v0.12.0-3 // indirect
-	github.com/cpuguy83/go-md2man/v2 v2.0.2 // indirect
+	github.com/NVIDIA/go-nvml v0.12.0-6 // indirect
+	github.com/cpuguy83/go-md2man/v2 v2.0.4 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.9.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
@@ -49,7 +49,7 @@ require (
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
 	github.com/syndtr/gocapability v0.0.0-20200815063812-42c35b437635 // indirect
-	github.com/xrash/smetrics v0.0.0-20201216005158-039620a65673 // indirect
+	github.com/xrash/smetrics v0.0.0-20240312152122-5f08fbb34913 // indirect
 	golang.org/x/mod v0.17.0 // indirect
 	golang.org/x/net v0.23.0 // indirect
 	golang.org/x/oauth2 v0.0.0-20220223155221-ee480838109b // indirect

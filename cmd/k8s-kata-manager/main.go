@@ -38,7 +38,7 @@ import (
 	api "github.com/NVIDIA/k8s-kata-manager/api/v1alpha1/config"
 	"github.com/NVIDIA/k8s-kata-manager/internal/cdi"
 	k8sclient "github.com/NVIDIA/k8s-kata-manager/internal/client-go"
-	"github.com/NVIDIA/k8s-kata-manager/internal/containerd"
+	containerd2 "github.com/NVIDIA/k8s-kata-manager/internal/containerd"
 	"github.com/NVIDIA/k8s-kata-manager/internal/kata/transform"
 	"github.com/NVIDIA/k8s-kata-manager/internal/oras"
 	"github.com/NVIDIA/k8s-kata-manager/internal/version"
@@ -248,7 +248,7 @@ func (w *worker) Run(c *cli.Context) error {
 
 	ctrdConfig, err := containerd.New(
 		containerd.WithPath(w.ContainerdConfig),
-		containerd.WithPodAnnotations("io.katacontainers.*"),
+		//containerd.WithPodAnnotations("io.katacontainers.*"),
 		containerd.WithRuntimeType("io.containerd.kata.v2"),
 	)
 	if err != nil {
@@ -403,7 +403,7 @@ func restartContainerd(containerdSocket string) error {
 	// Start the function in a goroutine
 	go func() {
 		// Execute your function here
-		err := containerd.RestartContainerd(containerdSocket)
+		err := containerd2.RestartContainerd(containerdSocket)
 		if err != nil {
 			klog.Errorf("error restarting containerd: %v", err)
 			done <- err
